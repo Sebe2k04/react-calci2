@@ -15,7 +15,14 @@ const Calculator = () => {
         console.log(total);
     }
     const handleEquals = (e) => {
-        setValue(eval(total));
+        try{
+            setValue(eval(total));
+        }
+        catch{
+            setValue('MathError');
+            displayVal='';
+            total=''; 
+        }
     }
     const handleClear = () =>{
         setValue('0');
