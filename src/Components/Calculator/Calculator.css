@@ -1,0 +1,27 @@
+.calculator{
+    padding: 10px;
+    width: 164px;
+    height: 215px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.display{
+    width: 160px;
+    margin: 10px 0px;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(226, 226, 226);
+}
+.display-content{
+    width: 140px;
+    text-align: right;
+}
+.layout{
+    height: 164px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
